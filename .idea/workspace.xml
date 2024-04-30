@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="587e4ca7-936c-4348-a44b-66140bd53f91" name="변경" comment="깃 연동 테스트">
-      <change afterPath="$PROJECT_DIR$/src/calculator_level1/App_level1_7.java" afterDir="false" />
+    <list default="true" id="587e4ca7-936c-4348-a44b-66140bd53f91" name="변경" comment="7. Level 1-7 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level1/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator_level1/App_level1_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level1/App_level1_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level1/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,63 @@
       <option name="project" value="LOCAL" />
       <updated>1714462590487</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="주석 처리">
+      <option name="closed" value="true" />
+      <created>1714463579888</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463579888</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Level 1-7. 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다.">
+      <option name="closed" value="true" />
+      <created>1714463614295</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463614295</updated>
+    </task>
+    <task id="LOCAL-00013" summary="깃 연동 테스트">
+      <option name="closed" value="true" />
+      <created>1714463624272</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463624272</updated>
+    </task>
+    <task id="LOCAL-00014" summary="6. Level 1-6 연산 결과가 10개를 초과하는 경우 가장 먼저 저장된 결과를 삭제하고 새로운 연산 결과가 저장될 수 있도록 소스 코드를 수정합니다.">
+      <option name="closed" value="true" />
+      <created>1714463685498</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463685498</updated>
+    </task>
+    <task id="LOCAL-00015" summary="7. 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다.">
+      <option name="closed" value="true" />
+      <created>1714463717195</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463717195</updated>
+    </task>
+    <task id="LOCAL-00016" summary="7. Level 1-7 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다.">
+      <option name="closed" value="true" />
+      <created>1714463871224</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463871224</updated>
+    </task>
+    <task id="LOCAL-00017" summary="7. Level 1-7 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다.">
+      <option name="closed" value="true" />
+      <created>1714463883051</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463883051</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,8 +218,12 @@
     <MESSAGE value="Scanner를 사용하여 양의 정수 2개(0 포함)를 전달 받을 수 있습니다." />
     <MESSAGE value="4. 반복문을 사용하여 반복의 종료를 알려주는 “exit” 문자열을 입력하기 전까지 무한으로 계산을 진행할 수 있도록 소스 코드를 수정합니다." />
     <MESSAGE value="5. Level 1-5 연산 결과 10개를 저장할 수 있는 배열을 선언 및 생성하고 연산의 결과를 저장합니다." />
-    <MESSAGE value="6. Level 1-6 연산 결과가 10개를 초과하는 경우 가장 먼저 저장된 결과를 삭제하고 새로운 연산 결과가 저장될 수 있도록 소스 코드를 수정합니다." />
+    <MESSAGE value="주석 처리" />
+    <MESSAGE value="Level 1-7. 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다." />
     <MESSAGE value="깃 연동 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="깃 연동 테스트" />
+    <MESSAGE value="6. Level 1-6 연산 결과가 10개를 초과하는 경우 가장 먼저 저장된 결과를 삭제하고 새로운 연산 결과가 저장될 수 있도록 소스 코드를 수정합니다." />
+    <MESSAGE value="7. 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다." />
+    <MESSAGE value="7. Level 1-7 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="7. Level 1-7 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다." />
   </component>
 </project>
