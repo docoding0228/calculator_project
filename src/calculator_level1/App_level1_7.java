@@ -35,6 +35,7 @@ public class App_level1_7 {
             boolean effectiveness = true; // 유효성 체크
             int result = 0;
 
+
             switch (operator) {
                 case '+':
                     result = firstNumber + secondNumber;
