@@ -15,6 +15,7 @@ public class App {
         System.out.print("사칙연산 기호를 입력하세요: ");
         char operator = sc.next().charAt(0); // 입력 받은 string의 인덱스 0번 char을 가져온다.
 
+        // 3. 입력받은 양의 정수 2개와 사칙연산 기호를 사용하여 연산을 진행한 후 결과값을 출력합니다.
         int result = 0;
         switch (operator) { // operator 값에 따라 네 가지 case로 분류
             case '+': // 덧셈 연산 수행하여 result에 저장
