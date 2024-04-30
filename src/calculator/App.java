@@ -59,18 +59,36 @@ public class App {
                     break;
             }
             // 5. Level 1-5 연산 결과 10개를 저장할 수 있는 배열을 선언 및 생성하고 연산의 결과를 저장합니다.
-            if (effectiveness) {
-                System.out.println("결과: " + result);
+//            if (effectiveness) {
+//                if (index < results.length) { // 배열에 결과를 저장할 여유가 있을 때
+//                    results[index++] = result; // 결과를 배열에 저장하고 인덱스 증가
+//                } else {
+//                    System.out.println("더 이상 결과를 저장할 수 없습니다.");
+//                    running = false; // 결과 저장에 한계가 도달하면 프로그램 종료
+//                    break;
+//                }
+//                // 배열의 모든 결과를 출력
+//                System.out.print("저장된 결과: ");
+//                for (int i = 0; i < index; i++) {
+//                    System.out.print(results[i] + ", ");
+//                }
+//                System.out.println();
 
-                if (index >= results.length) { // 인덱스가 배열의 크기를 초과할 경우
-                    System.out.println("저장된 결과 개수의 한계에 도달했습니다.");
-                    running = false; // 반복 종료
-                    System.out.println("더 이상 결과를 저장할 수 없습니다. 프로그램을 종료합니다.");
-                } else {
-                    results[index++] = result; // 결과를 배열에 저장하고 인덱스 증가
+            // 6. 연산 결과가 10개를 초과하는 경우 가장 먼저 저장된 결과를 삭제하고 새로운 연산 결과가 저장될 수 있도록 소스 코드를 수정합니다.
+            if (effectiveness) {
+                // 최대 크기에 도달하면 원형 큐처럼 처음부터 시작
+                results[index % results.length] = result; // 원형 큐처럼 동작
+                index++; // 인덱스 증가
+
+                // 배열의 모든 결과를 출력
+                System.out.print("저장된 결과: ");
+                for (int i = 0; i < results.length; i++) {
+                    int pos = (index + i) % results.length; // 출력 위치 계산
+                    System.out.print(results[pos] + " "); // 배열의 값 출력
                 }
+                System.out.println(); // 줄바꿈
             }
         }
-        sc.close(); // Scanner 리소스 해제
     }
 }
+
