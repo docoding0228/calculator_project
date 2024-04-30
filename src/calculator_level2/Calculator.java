@@ -11,7 +11,6 @@ public class Calculator {
     public Calculator() {
         this.results = new ArrayList<>();
     }
-
     public List<Double> getAllResults() {
         return results;
     }

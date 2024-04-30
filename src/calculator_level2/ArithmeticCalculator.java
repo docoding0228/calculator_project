@@ -2,30 +2,39 @@ package calculator_level2;
 
 // 사칙연산 계산기 클래스, Calculator를 상속받음
 public class ArithmeticCalculator extends Calculator {
+    private AddOperator addOperator;
+    private SubtractOperator subtractOperator;
+    private MultiplyOperator multiplyOperator;
+    private DivideOperator divideOperator;
+
+    public ArithmeticCalculator() {
+        this.addOperator = new AddOperator();  // 더하기 연산 객체
+        this.subtractOperator = new SubtractOperator();  // 빼기 연산 객체
+        this.multiplyOperator = new MultiplyOperator();  // 곱하기 연산 객체
+        this.divideOperator = new DivideOperator();  // 나누기 연산 객체
+    }
+
     public double calculate(double firstNumber, double secondNumber, char operator) throws Exception {
         double result;
 
         switch (operator) {
             case '+':
-                result = firstNumber + secondNumber;
+                result = addOperator.add(firstNumber, secondNumber);  // 더하기 연산
                 break;
             case '-':
-                result = firstNumber - secondNumber;
+                result = subtractOperator.subtract(firstNumber, secondNumber);  // 빼기 연산
                 break;
             case '*':
-                result = firstNumber * secondNumber;
+                result = multiplyOperator.multiply(firstNumber, secondNumber);  // 곱하기 연산
                 break;
             case '/':
-                if (secondNumber == 0) {
-                    throw new ArithmeticException("나누기에서는 0으로 나눌 수 없습니다.");
-                }
-                result = firstNumber / secondNumber;
+                result = divideOperator.divide(firstNumber, secondNumber);  // 나누기 연산
                 break;
             default:
                 throw new IllegalArgumentException("유효하지 않은 연산 기호입니다.");
         }
 
-        results.add(result); // 연산 결과를 저장
+        results.add(result);  // 결과 저장
         return result;
     }
 }

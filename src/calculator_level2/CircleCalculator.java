@@ -6,8 +6,8 @@ public class CircleCalculator extends Calculator {
         if (radius < 0) {
             throw new IllegalArgumentException("반지름은 음수일 수 없습니다.");
         }
-        double area = Math.PI * radius * radius;
-        results.add(area); // 결과를 저장
+        double area = Math.PI * radius * radius;  // 원의 넓이 계산
+        results.add(area);  // 결과를 저장
         return area;
     }
 }

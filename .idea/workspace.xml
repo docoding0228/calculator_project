@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="587e4ca7-936c-4348-a44b-66140bd53f91" name="변경" comment="7. Level 2-7 Calculator 클래스에 반지름을 매개변수로 전달받아 원의 넓이를 계산하여 반환해주는 메서드를 구현합니다.">
-      <change afterPath="$PROJECT_DIR$/src/calculator_level2/ArithmeticCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator_level2/CircleCalculator.java" afterDir="false" />
+    <list default="true" id="587e4ca7-936c-4348-a44b-66140bd53f91" name="변경" comment="7. Level 2-8 사칙연산을 수행하는 계산기 ArithmeticCalculator 클래스와 원과 관련된 연산을 수행하는 계산기 CircleCalculator 클래스 2개를 구현합니다.">
+      <change afterPath="$PROJECT_DIR$/src/calculator_level2/AddOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calculator_level2/DivideOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calculator_level2/MultiplyOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calculator_level2/SubtractOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculator_level2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/ArithmeticCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculator_level2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/CircleCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/CircleCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714477794745</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="7. Level 2-8 사칙연산을 수행하는 계산기 ArithmeticCalculator 클래스와 원과 관련된 연산을 수행하는 계산기 CircleCalculator 클래스 2개를 구현합니다.">
+      <option name="closed" value="true" />
+      <created>1714479214947</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1714479214947</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,6 +344,7 @@
     <MESSAGE value="6. Level 2-6 Calculator 인스턴스를 생성(new)할 때 생성자를 통해 연산 결과를 저장하고 있는 컬렉션 필드가 초기화 되도록 수정합니다." />
     <MESSAGE value="6. Level 2-7 Calculator 클래스에 반지름을 매개변수로 전달받아 원의 넓이를 계산하여 반환해주는 메서드를 구현합니다." />
     <MESSAGE value="7. Level 2-7 Calculator 클래스에 반지름을 매개변수로 전달받아 원의 넓이를 계산하여 반환해주는 메서드를 구현합니다." />
-    <option name="LAST_COMMIT_MESSAGE" value="7. Level 2-7 Calculator 클래스에 반지름을 매개변수로 전달받아 원의 넓이를 계산하여 반환해주는 메서드를 구현합니다." />
+    <MESSAGE value="7. Level 2-8 사칙연산을 수행하는 계산기 ArithmeticCalculator 클래스와 원과 관련된 연산을 수행하는 계산기 CircleCalculator 클래스 2개를 구현합니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="7. Level 2-8 사칙연산을 수행하는 계산기 ArithmeticCalculator 클래스와 원과 관련된 연산을 수행하는 계산기 CircleCalculator 클래스 2개를 구현합니다." />
   </component>
 </project>
