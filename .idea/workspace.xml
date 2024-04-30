@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="587e4ca7-936c-4348-a44b-66140bd53f91" name="변경" comment="9. Level 2-9 ArithmeticCalculator 클래스의 연산 메서드에 책임(역할)이 많아 보입니다. 사칙연산 각각의 기능을 담당하는 AddOperator, SubtractOperator, MultiplyOperator, DivideOperator 클래스를 만들어 연산 메서드의 책임을 분리 해봅니다. (SRP)">
-      <change afterPath="$PROJECT_DIR$/src/calculator_level2/ModOperator.java" afterDir="false" />
+    <list default="true" id="587e4ca7-936c-4348-a44b-66140bd53f91" name="변경" comment="10. Level 2-10 ArithmeticCalculator 클래스에 추가로 나머지 연산(%) 기능을 추가하기 위해 ModOperator 클래스를 만들어 추가합니다.">
+      <change afterPath="$PROJECT_DIR$/src/calculator_level2/Operator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/AddOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/AddOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculator_level2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculator_level2/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/ArithmeticCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/CircleCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/CircleCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/DivideOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/DivideOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/ModOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/ModOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/MultiplyOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/MultiplyOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator_level2/SubtractOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator_level2/SubtractOperator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +62,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/npng0/.cache/Desktop/내배캠 JAVA/calculatorproject",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "애플리케이션.App.executor": "Run"
   }
@@ -313,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714479975811</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="10. Level 2-10 ArithmeticCalculator 클래스에 추가로 나머지 연산(%) 기능을 추가하기 위해 ModOperator 클래스를 만들어 추가합니다.">
+      <option name="closed" value="true" />
+      <created>1714481500951</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1714481500951</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,6 +368,7 @@
     <MESSAGE value="7. Level 2-7 Calculator 클래스에 반지름을 매개변수로 전달받아 원의 넓이를 계산하여 반환해주는 메서드를 구현합니다." />
     <MESSAGE value="7. Level 2-8 사칙연산을 수행하는 계산기 ArithmeticCalculator 클래스와 원과 관련된 연산을 수행하는 계산기 CircleCalculator 클래스 2개를 구현합니다." />
     <MESSAGE value="9. Level 2-9 ArithmeticCalculator 클래스의 연산 메서드에 책임(역할)이 많아 보입니다. 사칙연산 각각의 기능을 담당하는 AddOperator, SubtractOperator, MultiplyOperator, DivideOperator 클래스를 만들어 연산 메서드의 책임을 분리 해봅니다. (SRP)" />
-    <option name="LAST_COMMIT_MESSAGE" value="9. Level 2-9 ArithmeticCalculator 클래스의 연산 메서드에 책임(역할)이 많아 보입니다. 사칙연산 각각의 기능을 담당하는 AddOperator, SubtractOperator, MultiplyOperator, DivideOperator 클래스를 만들어 연산 메서드의 책임을 분리 해봅니다. (SRP)" />
+    <MESSAGE value="10. Level 2-10 ArithmeticCalculator 클래스에 추가로 나머지 연산(%) 기능을 추가하기 위해 ModOperator 클래스를 만들어 추가합니다." />
+    <option name="LAST_COMMIT_MESSAGE" value="10. Level 2-10 ArithmeticCalculator 클래스에 추가로 나머지 연산(%) 기능을 추가하기 위해 ModOperator 클래스를 만들어 추가합니다." />
   </component>
 </project>

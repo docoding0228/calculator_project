@@ -8,6 +8,6 @@ public class CircleCalculator extends Calculator {
         }
         double area = Math.PI * radius * radius;  // 원의 넓이 계산
         results.add(area);  // 결과를 저장
-        return area;
+        return Double.parseDouble(String.format("%.3f", area)); // 소수점 셋째 자리까지 출력
     }
 }
