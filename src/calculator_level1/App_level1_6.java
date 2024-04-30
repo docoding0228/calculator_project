@@ -33,7 +33,7 @@ import java.util.Scanner;
                 char operator = sc.next().charAt(0); // 입력받은 문자열의 첫 번째 문자 추출
 
                 // 3. 입력받은 양의 정수 2개와 사칙연산 기호를 사용하여 연산을 진행한 후 결과값을 출력
-                boolean effectiveness = true; // 연산의 유효성을 체크
+                boolean effectiveness = true; // 유효성을 체크
 
                 int result = 0;
                 switch (operator) {
