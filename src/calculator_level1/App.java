@@ -30,6 +30,7 @@ public class App {
                 continue; // "remove" 입력 시 연산 건너뛰기
             }
 
+            // 8. Level 1-8 inquiry”라는 문자열이 입력되면 저장된 연산 결과 전부를 출력합니다.
             if (firstInput.equalsIgnoreCase("inquiry")) { // "inquiry" 입력 시 결과 출력
                 if (results.isEmpty()) {
                     System.out.println("저장된 결과가 없습니다.");
