@@ -6,9 +6,10 @@ import java.util.Scanner;
 public class App_level1_7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        // 7. Level 1-7 연산 결과가 10개로 고정되지 않고 무한이 저장될 수 있도록 소스 코드를 수정합니다.
         List<Integer> results = new ArrayList<>(); // 결과를 저장할 컬렉션 사용
         boolean running = true;
-
 
         while (running) {
             System.out.print("첫 번째 숫자를 입력하세요 (또는 'exit' 입력시 종료): ");
