@@ -6,9 +6,14 @@ public class App {
         Scanner sc = new Scanner(System.in);
         boolean running = true; // 프로그램 실행을 제어하는 플래그
 
-        while (running) { // 반복문을 통해 무한 계산을 가능하게 함
+        // 5. Level 1-5 연산 결과 10개를 저장할 수 있는 배열을 선언 및 생성하고 연산의 결과를 저장합니다.
+        int[] results = new int[10]; // 연산의 결과를 저장할 수 있도록 적합한 타입의 배열을 생성한다.
+        int index = 0; // 연산의 결과가 저장된 배열의 마지막 index를 저장하는 변수를 선언한다.
+
+        while (running) { // 반복문을 통해 무한히 계산을 가능하게 함
             // 4. 반복문을 사용하여 반복의 종료를 알려주는 “exit” 문자열을 입력하기 전까지 무한으로 계산을 진행할 수 있도록 소스 코드를 수정합니다.
             // 사용자가 "exit"을 입력하면 프로그램 종료 또는 숫자를 입력 시 진행
+
             System.out.print("첫 번째 숫자를 입력하세요 (또는 'exit' 입력시 종료): ");
             String firstInput = sc.next(); // 입력 받음
 
@@ -27,11 +32,9 @@ public class App {
             char operator = sc.next().charAt(0); // 입력받은 문자열의 첫 번째 문자 추출
 
             // 3. 입력받은 양의 정수 2개와 사칙연산 기호를 사용하여 연산을 진행한 후 결과값을 출력
-            int result = 0;
             boolean effectiveness = true; // 연산의 유효성을 체크
 
-
-
+            int result = 0;
             switch (operator) {
                 case '+':
                     result = firstNumber + secondNumber;
@@ -55,8 +58,17 @@ public class App {
                     effectiveness = false; // 무효 연산 플래그 설정
                     break;
             }
+            // 5. Level 1-5 연산 결과 10개를 저장할 수 있는 배열을 선언 및 생성하고 연산의 결과를 저장합니다.
             if (effectiveness) {
                 System.out.println("결과: " + result);
+
+                if (index >= results.length) { // 인덱스가 배열의 크기를 초과할 경우
+                    System.out.println("저장된 결과 개수의 한계에 도달했습니다.");
+                    running = false; // 반복 종료
+                    System.out.println("더 이상 결과를 저장할 수 없습니다. 프로그램을 종료합니다.");
+                } else {
+                    results[index++] = result; // 결과를 배열에 저장하고 인덱스 증가
+                }
             }
         }
         sc.close(); // Scanner 리소스 해제
