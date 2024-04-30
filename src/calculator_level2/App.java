@@ -9,7 +9,6 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
         boolean running = true;
-
         // 7. Calculator 클래스에 반지름을 매개변수로 전달받아 원의 넓이를 계산하여 반환해주는 메서드를 구현합니다.
         while (running) {
             System.out.print("사칙연산 또는 원의 넓이 계산 중 선택 (연산은 'oper', 원의 넓이는 'circle'): ");

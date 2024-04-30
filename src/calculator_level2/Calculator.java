@@ -44,7 +44,6 @@ public class Calculator {
         results.add(result); // 연산 결과를 컬렉션에 추가
         return result; // 결과 반환
     }
-
     // 2-7
     // 원의 넓이 계산 및 저장
     public double calculateCircleArea(double radius) {
