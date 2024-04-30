@@ -22,7 +22,7 @@ public class App {
                 System.out.print("두 번째 숫자를 입력하세요: ");
                 double secondNumber = sc.nextDouble();  // 두 번째 숫자
 
-                System.out.print("사칙연산 기호를 입력하세요: ");
+                System.out.print("사칙연산 기호를 입력하세요. (+, -, *, /, %): ");
                 char operator = sc.next().charAt(0);  // 연산 기호 입력
 
                 try {
@@ -71,5 +71,7 @@ public class App {
                 }
             }
         }
+
+        sc.close();  // 스캐너 닫기
     }
 }
