@@ -7,7 +7,7 @@ public class Calculator {
     private List<Integer> results; // 연산 결과를 저장하는 리스트
 
     public Calculator() {
-        this.results = new ArrayList<>(); // 초기화
+        this.results = new ArrayList<>(); // 리스트 초기화
     }
 
     public int calculate(int firstNumber, int secondNumber, char operator) {
@@ -34,19 +34,19 @@ public class Calculator {
         }
 
         results.add(result); // 연산 결과를 리스트에 추가
-        return result; // 계산된 결과 반환
+        return result;
     }
 
-    // 가장 오래된 결과를 삭제하는 메서드
+    // 저장된 연산 결과를 조회하는 메서드
+    public List<Integer> getAllResults() {
+        return new ArrayList<>(results); // 현재까지 저장된 결과를 반환
+    }
+
     public boolean removeOldestResult() {
         if (!results.isEmpty()) {
-            results.remove(0); // 첫 번째 요소 삭제
-            return true; // 삭제 성공
+            results.remove(0); // 가장 오래된 결과 삭제
+            return true;
         }
-        return false; // 삭제할 결과가 없음
-    }
-
-    public List<Integer> getResults() {
-        return new ArrayList<>(results); // 결과 리스트 반환
+        return false; // 삭제할 결과가 없는 경우
     }
 }

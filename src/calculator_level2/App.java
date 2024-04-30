@@ -11,32 +11,30 @@ public class App {
 
         while (running) {
             System.out.print("첫 번째 숫자를 입력하세요 (또는 'exit', 'remove', 'inquiry' 중 하나 입력): ");
-            String firstInput = sc.next(); // 사용자 입력받기
+            String firstInput = sc.next(); // 사용자 입력
 
-            // "exit"가 입력되면 프로그램 종료
             if (firstInput.equalsIgnoreCase("exit")) {
                 System.out.println("프로그램을 종료합니다.");
-                running = false;
-                continue; // 루프 종료
+                running = false; // 프로그램 종료
+                continue;
             }
 
-            // "remove"가 입력되면 가장 오래된 결과 삭제
+            // "inquiry"가 입력되면 저장된 연산 결과 출력
+            if (firstInput.equalsIgnoreCase("inquiry")) {
+                System.out.println("저장된 결과: ");
+                for (Integer result : calculator.getAllResults()) { // 결과 조회 및 출력
+                    System.out.print(result + " "); // 향상된 for문을 사용해 결과 출력
+                }
+                System.out.println();
+                continue;
+            }
+
             if (firstInput.equalsIgnoreCase("remove")) {
                 if (calculator.removeOldestResult()) {
                     System.out.println("가장 오래된 결과가 삭제되었습니다.");
                 } else {
                     System.out.println("삭제할 결과가 없습니다.");
                 }
-                continue; // 다음 반복으로
-            }
-
-            // "inquiry"가 입력되면 저장된 결과 출력
-            if (firstInput.equalsIgnoreCase("inquiry")) {
-                System.out.println("저장된 결과: ");
-                for (Integer result : calculator.getResults()) { // 결과 출력
-                    System.out.print(result + " "); // 향상된 for문
-                }
-                System.out.println(); // 줄바꿈
                 continue; // 다음 반복으로
             }
 
@@ -52,6 +50,7 @@ public class App {
                 System.out.println("결과: " + result);
 
                 System.out.println("더 계산하시겠습니까? (exit 입력 시 종료): ");
+                System.out.println("더 계산하시려면 아무거나 입력하세요. ");
                 String response = sc.next(); // 사용자 입력
                 if (response.equalsIgnoreCase("exit")) {
                     running = false; // 프로그램 종료
@@ -60,5 +59,7 @@ public class App {
                 System.out.println("오류: " + e.getMessage());
             }
         }
+
+        sc.close(); // 스캐너 닫기
     }
 }
