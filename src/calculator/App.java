@@ -75,20 +75,20 @@ public class App {
 //                System.out.println();
 
             // 6. 연산 결과가 10개를 초과하는 경우 가장 먼저 저장된 결과를 삭제하고 새로운 연산 결과가 저장될 수 있도록 소스 코드를 수정합니다.
-            if (effectiveness) {
-                // 최대 크기에 도달하면 원형 큐처럼 처음부터 시작하도록 구현.
-                results[index % results.length] = result; // 원형 큐처럼 동작.
-                index++; // 인덱스 증가
+            // Hint : 결과 값들이 한칸씩 앞으로 이동되면 되지 않을까?
+                if (effectiveness) {
+                    results[index % results.length] = result; // 원형 큐처럼 동작하는 것을 구현
+                    index++;
 
-                // 배열의 모든 결과를 출력
-                System.out.print("저장된 결과: ");
-                for (int i = 0; i < results.length; i++) {
-                    int pos = (index + i) % results.length; // 출력 위치 계산.
-                    System.out.print(results[pos] + " "); // 배열의 값 출력.
+                    // 저장된 결과 출력
+                    System.out.print("저장된 결과: ");
+                    int start = index % results.length;
+                    for (int i = 0; i < results.length; i++) { // 원형 큐의 순서대로 출력
+                        System.out.print(results[(start + i) % results.length] + " ");
+                    }
+                    System.out.println();
                 }
-                System.out.println(); // 줄바꿈
             }
         }
     }
-}
 
