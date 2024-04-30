@@ -30,6 +30,8 @@ public class App {
             int result = 0;
             boolean effectiveness = true; // 연산의 유효성을 체크
 
+
+
             switch (operator) {
                 case '+':
                     result = firstNumber + secondNumber;
